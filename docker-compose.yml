@@ -24,6 +24,8 @@ services:
       - '--storage.tsdb.retention.time=200h'
       - '--web.enable-lifecycle'
     restart: unless-stopped
+    extra_hosts:
+      - "docker_host:$HOME_IP"
     expose:
       - 9090
     networks:
