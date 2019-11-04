@@ -37,7 +37,7 @@ scrape_configs:
   - job_name: 'quarkus'
     scrape_interval: 5s
     static_configs:
-      - targets: ['docker_host:8082']
+      - targets: ['quarkus:8082']
 
 alerting:
   alertmanagers:
